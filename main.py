@@ -14,7 +14,7 @@ async def main():
     threading.Thread(target=check_coins_balance).start()
 
     task = TaskHandler()
-    logo_path = os.path.join("data", "logo.jpg")
+    logo_path = os.path.join("src", "logo.jpg")
     put_image(open(logo_path, "rb").read())
 
     method = await inp.select(
